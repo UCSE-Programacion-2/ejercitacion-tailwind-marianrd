@@ -4,55 +4,55 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Labs - Privacidad</title>
-    <link rel="stylesheet" href="../css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="site-body">
-    <header class="site-header">
-      <div class="container nav-wrapper">
-        <a class="brand" href="../index.html">Tailwind Labs</a>
-        <nav class="site-nav">
-          <a href="../index.html">Inicio</a>
-          <a href="./about.html">Sobre el curso</a>
-          <a href="./faq.html">FAQ</a>
-          <a class="is-active" href="./privacy.html">Privacidad</a>
-        </nav>
-      </div>
-    </header>
+  <body class="h-min-screen flex flex-col m-0 font-sans bg-[#f1f5f9] text-[#1e293b] leading-[1.5]">
+  <header class="bg-slate-900 text-[#e2e8f0] border-b-[1px] border-slate-700">
+    <div class="flex items-center justify-between gap-4 text-white container nav-wrapper py-4 mx-auto my-0 text-[0.95rem] w-[min(1100px,92%)]">
+      <a class="text-[#e2e8f0] font-black tracking-[0.3px]" href="../index.html">Tailwind Labs</a>
+      <nav id="menu-principal" class="flex flex-wrap gap-4">
+        <a class="text-[#cbd5e1] text-[0.95rem] py-[0.3rem] px-[0.45rem] rounded-[0.4rem] transition duration-200 ease-in hover:text-[#67e8f9] hover:bg-white/10" href="../index.html">Inicio</a>
+        <a class="text-[#cbd5e1] text-[0.95rem] py-[0.3rem] px-[0.45rem] rounded-[0.4rem] transition duration-200 ease-in hover:text-[#67e8f9] hover:bg-white/10" href="../pages/about.html">Sobre el curso</a>
+        <a class="text-[#cbd5e1] text-[0.95rem] py-[0.3rem] px-[0.45rem] rounded-[0.4rem] transition duration-200 ease-in hover:text-[#67e8f9] hover:bg-white/10" href="../pages/faq.html">FAQ</a>
+        <a class="text-[#67e8f9] text-[0.95rem] py-[0.3rem] px-[0.45rem] rounded-[0.4rem] transition duration-200 ease-in hover:text-[#67e8f9] hover:bg-white/10" href="../pages/privacy.html">Privacidad</a>
+      </nav>
+    </div>
+  </header>
 
-    <main class="site-main">
-      <section class="container section">
-        <div class="highlight-box">
-          <h1>Politica de privacidad</h1>
-          <p>
+    <main class="flex-1">
+      <section class="py-12 w-[min(1100px,92%)] my-0 mx-auto pt-12 pb-12">
+        <div class="p-6 bg-white rounded-xl border border-[#cbd5e1] shadow-lg">
+          <h1 class="text-[#0f172a] text-[clamp(1.4rem,2.4vw,2rem)] font-bold m-0">Politica de privacidad</h1>
+          <p class="mbs-[1em] mbe-[1em] text-[1.065rem] mt-[0.6rem] text-[#475569]">
           Esta pagina sirve para practicar bloques informativos, listas y estilos con jerarquia visual.
           </p>
         </div>
 
-        <div id="privacy-cards" class="privacy-cards">
-          <article class="privacy-card">
-            <h2>Datos recopilados</h2>
-            <ul>
-              <li>Nombre y apellido</li>
-              <li>Correo electronico institucional</li>
-              <li>Actividad dentro del campus</li>
+        <div id="privacy-cards" class="grid grid-cols-2 gap-4 mt-[1.4rem]">
+          <article class="p-4 bg-white rounded-xl border border-[#cbd5e1] shadow-lg">
+            <h2 class="m-0 text-[#0f172a] text-lg font-bold">Datos recopilados</h2>
+            <ul class="list-disc mbs-[1em] mbe-[1em] text-[1.065rem] mt-[0.7rem] text-[#475569] pl-[1.2rem]">
+              <li class="text-[#475569]">Nombre y apellido</li>
+              <li class="text-[#475569]">Correo electronico institucional</li>
+              <li class="text-[#475569]">Actividad dentro del campus</li>
             </ul>
           </article>
-          <article class="privacy-card">
-            <h2>Uso de la informacion</h2>
-            <ul>
-              <li>Seguimiento de progreso academico</li>
-              <li>Feedback personalizado de actividades</li>
-              <li>Comunicacion de novedades del curso</li>
+          <article class="p-4 bg-white rounded-xl border border-[#cbd5e1] shadow-lg">
+            <h2 class="m-0 text-[#0f172a] text-lg font-bold">Uso de la informacion</h2>
+            <ul class="list-disc mbs-[1em] mbe-[1em] text-[1.065rem] mt-[0.7rem] text-[#475569] pl-[1.2rem]">
+              <li class="text-[#475569]">Seguimiento de progreso academico</li>
+              <li class="text-[#475569]">Feedback personalizado de actividades</li>
+              <li class="text-[#475569]">Comunicacion de novedades del curso</li>
             </ul>
           </article>
         </div>
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-wrapper">
-        <p>Programacion II - Ejercitacion Tailwind CSS</p>
-        <p class="student-signature">Desarrollado por [Nombre y Apellido]</p>
+    <footer class="border-t-[1px] border-[#cbd5e1] py-4 text-[0.92rem] text-[#475569] bg-white absolute bottom-0 left-0 w-full">
+      <div class="flex flex-wrap justify-between gap-2 py-4 w-[min(1100px,92%)] my-0 mx-auto">
+        <p class="text-[1.065rem]">Programacion II - Ejercitacion Tailwind CSS</p>
+        <p class="text-[1.065rem] font-bold">Desarrollado por Mariano Reynaga Ducos</p>
       </div>
     </footer>
   </body>

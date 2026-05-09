@@ -4,72 +4,72 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tailwind Labs - Inicio</title>
-    <link rel="stylesheet" href="./css/styles.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
   </head>
-  <body class="site-body">
-    <header class="site-header">
-      <div class="container nav-wrapper">
-        <a class="brand" href="./index.html">Tailwind Labs</a>
-        <nav id="menu-principal" class="site-nav">
-          <a href="./index.html">Inicio</a>
-          <a href="./pages/about.html">Sobre el curso</a>
-          <a href="./pages/faq.html">Preguntas frecuentes</a>
-          <a href="./pages/privacy.html">Privacidad</a>
+  <body class="h-min-screen flex flex-col m-0 font-sans bg-[#f1f5f9] text-[#1e293b] leading-[1.5]">
+    <header class="bg-slate-900 text-[#e2e8f0] border-b-[1px] border-slate-700">
+      <div class="flex items-center justify-between gap-4 text-white container nav-wrapper py-4 mx-auto my-0 text-[0.95rem] w-[min(1100px,92%)]">
+        <a class="text-[#e2e8f0] font-black tracking-[0.3px]" href="./index.html">Tailwind Labs</a>
+        <nav id="menu-principal" class="flex flex-wrap gap-4">
+          <a class="text-[#cbd5e1] text-[0.95rem] py-[0.3rem] px-[0.45rem] rounded-[0.4rem] transition duration-200 ease-in hover:text-[#67e8f9] hover:bg-white/10" href="./index.html">Inicio</a>
+          <a class="text-[#cbd5e1] text-[0.95rem] py-[0.3rem] px-[0.45rem] rounded-[0.4rem] transition duration-200 ease-in hover:text-[#67e8f9] hover:bg-white/10" href="./pages/about.html">Sobre el curso</a>
+          <a class="text-[#cbd5e1] text-[0.95rem] py-[0.3rem] px-[0.45rem] rounded-[0.4rem] transition duration-200 ease-in hover:text-[#67e8f9] hover:bg-white/10" href="./pages/faq.html">Preguntas frecuentes</a>
+          <a class="text-[#cbd5e1] text-[0.95rem] py-[0.3rem] px-[0.45rem] rounded-[0.4rem] transition duration-200 ease-in hover:text-[#67e8f9] hover:bg-white/10" href="./pages/privacy.html">Privacidad</a>
         </nav>
       </div>
     </header>
 
-    <main class="site-main">
-      <section class="hero">
-        <div class="container">
-          <span class="hero-tag">Programacion II</span>
-          <h1>Practica guiada de Tailwind CSS</h1>
-          <p>
+    <main>
+      <section class="bg-gradient-to-r from-[#0f172a] to-[#0e7490] text-white py-16">
+        <div class="w-[min(1100px,92%)] my-0 mx-auto">
+          <span class="bg-white/15 border-[1px] border-white/20 rounded-full px-3 py-1 font-bold text-xs text-transform: uppercase tracking-[0.05em]">Programacion II</span>
+          <h1 class="mt-4 text-5xl font-bold leading-[1.2]">Practica guiada de Tailwind CSS</h1>
+          <p class="text-[#dbeafe] max-w-xl  mt-4">
             Esta pagina te sirve como laboratorio para aplicar utilidades de espaciado, flex, grid,
             responsive, tipografia y estados interactivos.
           </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary" href="#servicios-grid">
+          <div class="flex flex-wrap gap-3 mt-[1.8rem]">
+            <a class="text-slate-800 bg-[#67e8f9] font-[700] rounded-xl py-[0.65rem] px-4 transition duration-200 ease-in hover:translate-y-[-1px] hover:brightness-[1.05]" href="#servicios-grid">
               Ver bloques practicos
             </a>
-            <a class="btn btn-secondary" href="./pages/faq.html">
+            <a class="text-[#e2e8f0] border-[1px] border-solid border-white/50 font-[700] rounded-xl py-[0.65rem] px-4 transition duration-200 ease hover:translate-y-[-1px] hover:brightness-[1.05]" href="./pages/faq.html">
               Ir a FAQ
             </a>
           </div>
         </div>
       </section>
 
-      <section class="container section">
-        <h2>Objetivos de esta ejercitacion</h2>
-        <p class="section-intro">
+      <section class="py-9 w-[min(1100px,92%)] my-0 mx-auto">
+        <h2 class="m-0 text-[#0f172a] text-[clamp(1.4rem,2.4vw,2rem)] font-bold">Objetivos de esta ejercitacion</h2>
+        <p class="mt-[0.65rem] text-[#475569]">
           Cada tarjeta esta pensada para que practiques un conjunto de utilidades y aprendas a combinarlas.
         </p>
-        <div id="servicios-grid" class="cards-grid">
-          <article class="card">
-            <h3>Utilidades de layout</h3>
-            <p>
+        <div id="servicios-grid" class="sd:grid sd:grid-cols-2 sm:gap-4 grid grid-cols-3 gap-4 mt-[1.4rem]">
+          <article class="p-4 bg-white rounded-xl border border-[#cbd5e1] shadow-lg">
+            <h3 class="text-[1.17em] font-bold">Utilidades de layout</h3>
+            <p class="text-[#475569] text-[1.065rem] mt-2">
               Aplicar contenedores, columnas, gap, alineaciones y distribucion responsive.
             </p>
           </article>
-          <article class="card">
-            <h3>Tipografia y color</h3>
-            <p>
+          <article class="p-4 bg-white rounded-xl border border-[#cbd5e1] shadow-lg">
+            <h3 class="text-[1.17em] font-bold">Tipografia y color</h3>
+            <p class="text-[#475569] text-[1.065rem] mt-2">
               Definir jerarquia visual con tamaños, pesos, tracking, contraste y fondos.
             </p>
           </article>
-          <article class="card">
-            <h3>Estados e interacciones</h3>
-            <p>
+          <article class="p-4 bg-white rounded-xl border border-[#cbd5e1] shadow-lg">
+            <h3 class="text-[1.17em] font-bold">Estados e interacciones</h3>
+            <p class="text-[#475569] text-[1.065rem] mt-2">
               Mejorar experiencia con hover, focus, transiciones y microinteracciones.
             </p>
           </article>
         </div>
       </section>
 
-      <section class="container section section-last">
-        <div class="highlight-box">
-          <h2>Siguiente paso</h2>
-          <p>
+      <section class="py-12 w-[min(1100px,92%)] my-0 mx-auto pt-2 pb-10">
+        <div class="p-6 bg-white rounded-xl border border-[#cbd5e1] shadow-lg">
+          <h2 class="text-[#0f172a] text-[clamp(1.4rem,2.4vw,2rem)] font-bold m-0">Siguiente paso</h2>
+          <p class="mbs-[1em] mbe-[1em] text-[1.065rem] mt-[0.6rem] text-[#475569]">
             Continua con las paginas secundarias para practicar variantes responsive, listas,
             bloques informativos y consistencia visual en un mini sitio multipagina.
           </p>
@@ -77,11 +77,11 @@
       </section>
     </main>
 
-    <footer class="site-footer">
-      <div class="container footer-wrapper">
-        <p>Programacion II - Ejercitacion Tailwind CSS</p>
-        <p>Comision 2026</p>
-        <p class="student-signature">Desarrollado por [Nombre y Apellido]</p>
+    <footer class="border-t-[1px] border-[#cbd5e1] py-4 text-[0.92rem] text-[#475569] bg-white">
+      <div class="flex flex-wrap justify-between gap-2 py-4 w-[min(1100px,92%)] my-0 mx-auto">
+        <p class="text-[1.065rem]">Programacion II - Ejercitacion Tailwind CSS</p>
+        <p class="text-[1.065rem]">Comision 2026</p>
+        <p class="text-[1.065rem] font-bold">Desarrollado por Mariano Reynaga Ducos</p>
       </div>
     </footer>
   </body>
